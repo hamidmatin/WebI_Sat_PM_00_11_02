@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p{
+        background-color: bisque;
+      }
+      #p1 {
+        font-family: 'Times New Roman', Georgia, Times, serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        font-size: inherit;
+        font-size: xx-small;
+        font-size: x-small;
+        font-size: small;
+        font-size: large;
+        font-size: larger;
+        font-size: x-large;
+        font-size: xx-large;
+
+        font-size: 18px;
+
+        font-variant: normal;
+        font-variant: small-caps;
+      }
+
+      #p2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+        font-family: Geneva, Tahoma, 'Segoe UI', Verdana, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, 'Segoe UI', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+
+        /* font-size: 40px; */
+
+        line-height: normal;
+        line-height: 1;
+        line-height: 1.8;
+        line-height: 0.5;
+        line-height: 2.5;
+
+        line-height: 20px;
+        line-height: 40px;
+      }
+
+      #p3 {
+        font-family: consolas, 'Courier New', Courier, monospace;
+      }
+      #p4 {
+        font-family: 'Lucida Handwriting', cursive;
+      }
+      #p5 {
+        font-family: Papyrus, fantasy;
+      }
+
+      .font-style {
+        color: red;
+
+        font-style: normal; /* except of em, i, address */
+        font-style: italic;
+      }
+      em {
+        font-style: normal;
+        color: dodgerblue;
+      }
+      i{
+        color: crimson;
+      }
+      b{
+        color: deeppink;
+      }
+      strong{
+        color: rgb(204, 51, 235);
+        font-weight: normal;
+      }
+      .font-weight{
+        color: rgb(68, 212, 55);
+        font-weight: normal; /* except of b, strong, h1-6 */
+        
+        /* depend on font-family except of bold */
+        font-weight: lighter;
+        font-weight: bold;
+        font-weight: bolder;
+
+        font-weight: 100;
+        font-weight: 200;
+        font-weight: 300;
+        font-weight: 400;  /* normal */
+        font-weight: 500;
+        font-weight: 600;
+        font-weight: 700;  /* bold */ 
+        font-weight: 800;
+        font-weight: 900;
+      }
+
+      div {
+        background-color: rgb(243, 196, 196);
+        width: 200px;
+        /* height: 200px; */
+        text-align: center;
+        line-height: 100px;
+        /* line-height: 200px; */
+        line-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p1">
+      Lorem ipsum dolor sit <b>Amet consectetur</b> <strong>adipisicing elit</strong>. Quod sed sapiente
+      assumenda odit. Ipsam error tempore odio aliquid facere sit ratione
+      recusandae dolor dolores? Fugit pariatur placeat sint perferendis dicta!
+    </p>
+    <p id="p2">
+      Lorem ipsum
+      <span class="font-style">dolor sit amet consectetur</span> adipisicing
+      elit. Quod sed sapiente assumenda odit.
+      <span class="font-weight">Ipsam error tempore odio aliquid</span> facere
+      sit ratione recusandae dolor dolores? <em>Fugit pariatur placeat</em> <i>sint
+      perferendis dicta!</i>
+    </p>
+    <p id="p3">
+      Lorem ipsum
+      <span class="font-style">dolor sit amet consectetur</span> adipisicing
+      elit. Quod sed sapiente assumenda odit. Ipsam error tempore odio aliquid
+      facere sit ratione recusandae dolor dolores?
+      <em>Fugit pariatur placeat</em> sint perferendis dicta!
+    </p>
+    <p id="p4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed sapiente
+      assumenda odit. Ipsam error tempore odio aliquid facere sit ratione
+      recusandae dolor dolores? Fugit pariatur placeat sint perferendis dicta!
+    </p>
+    <p id="p5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sed sapiente
+      assumenda odit. Ipsam error tempore odio aliquid facere sit ratione
+      recusandae dolor dolores? Fugit pariatur placeat sint perferendis dicta!
+    </p>
+    <div>line 1</div>
+  </body>
+</html>

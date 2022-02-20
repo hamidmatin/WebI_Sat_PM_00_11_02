@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style >
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        /* color: rgb(23, 184, 85); */
+      }
+
+      div {
+        border: 4px solid #555;
+        border-radius: 6px;
+        width: 600px;
+        padding: 8px;
+        background-color: #f1f1f1;
+        margin: 100px auto;
+      }
+
+      h1 {
+        color: rgb(28, 179, 28);
+        
+        text-align: left;
+        text-align: right;
+        /* 
+          depend on direction 
+          if direction is ltr
+          start => left
+          end => right
+
+          if direction is rtl
+          start => right
+          end => left
+        */
+        text-align: start; /* default */
+        text-align: end;
+        text-align: center;
+
+        
+        /* except of a, ins, del*/
+        /* text-decoration: none; */
+        /* text-decoration: overline;  */
+        /* text-decoration: line-through;  */
+        /* text-decoration: underline;  */
+        
+        /* new */        
+        text-decoration-line: overline;
+        text-decoration-line: underline;
+        
+        text-decoration-color: red;
+
+        text-decoration-style: solid;
+        text-decoration-style: dashed;
+        text-decoration-style: dotted;
+        text-decoration-style: double;
+        text-decoration-style: wavy;
+
+        text-decoration-thickness: 20px;
+        text-decoration-thickness: 10px;
+        text-decoration-thickness: 5px;
+
+        /* shorthand
+            text-decoration: line color style thickness;
+        */
+        text-decoration: red wavy underline 5px;
+
+
+        text-transform: none;
+        text-transform: lowercase;
+        text-transform: uppercase;
+
+
+        letter-spacing: 0;
+        letter-spacing: -5px;
+        letter-spacing: 5px;
+        letter-spacing: 3px;
+      }
+
+      p {
+        text-align: justify;
+        text-transform: capitalize;
+
+        word-spacing: -5px;
+        word-spacing: 5px;
+
+        text-indent: 0;
+        text-indent: -50px;
+        text-indent: 50px;
+        text-indent: 1.5cm;
+      }
+
+      a {
+        color: fuchsia;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Text Formatting</h1>
+      <p>
+        This text is styled with some of the text formatting properties. The
+        heading uses the <strong>text-align</strong>, text-transform, and color properties. The
+        paragraph is indented, aligned, and the space between characters is
+        specified. The underline is removed from this colored
+        <a href="#">"Try it Yourself"</a>
+        link.
+      </p>
+    </div>
+  </body>
+</html>
