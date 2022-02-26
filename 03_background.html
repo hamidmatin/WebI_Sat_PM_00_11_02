@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 1100px;
+        height: 600px;
+        margin-bottom: 30px;
+        background-color: #f1f1f1;
+      }
+
+      #div1 {
+        background: rgb(208, 211, 32) url('/images/img_5terre.jpg') no-repeat center;
+
+        /* background-size: width height; */
+        background-size: 300px 200px;
+        background-size: 300px;
+        background-size: 800px;
+        background-size: 800px 300px;
+        background-size: 50%;
+        background-size: 50% 50%;
+        background-size: 100%;
+        background-size: 100% 100%;
+
+        /* width: 500px; */
+        background-size: contain;
+        background-size: cover;
+      }
+
+      #div2 {
+        box-sizing: border-box;
+        background: rgb(224, 157, 238) url('/images/img_5terre.jpg') no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        font-size: 36px;
+        text-align: justify;
+
+        padding: 50px;
+        border: 30px dotted rgb(240, 220, 42);
+
+        /* IMAGE */
+        background-origin: padding-box;
+        background-origin: content-box;
+        background-origin: border-box;
+
+        /* CUT */
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+      }
+
+      #div3 {
+        background: rgb(224, 157, 238) url('/images/img_5terre.jpg') no-repeat;
+        background-size: 100% 100%;
+        font-size: 150px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        color: transparent;
+
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      #div4 {
+        /* background-image: url('/images/img_lights_sm.jpg'), 
+                          url('/images/img_avatar1.png'),
+                          url('/images/cellphone.jpg'),
+                          url('/images/bgdesert.jpg');
+        background-position: bottom right, top right, bottom left;
+        background-repeat: no-repeat, no-repeat, no-repeat, repeat; */
+
+        background: url('/images/img_lights_sm.jpg') bottom right no-repeat,
+                    url('/images/img_avatar1.png') top right no-repeat,
+                    url('/images/cellphone.jpg') bottom left no-repeat,
+                    url('/images/bgdesert.jpg') repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere, animi quod aspernatur
+      quibusdam praesentium quos, mollitia a vel ex delectus id quidem inventore sequi officia
+      sapiente assumenda eveniet quia?
+    </div>
+    <div id="div3">Lorem ipsum dolor sit consectet</div>
+    <div id="div4"></div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* *{box-sizing: border-box;} */
+
+      #div1{
+        width: 800px;
+        border: 2px silver solid;
+        padding: 15px;
+        border-radius: 8px;
+
+        font-size: 20px;
+
+        text-align: justify;
+        /* راه اول */
+        /* height: 150px; */
+
+        /* راه دوم */
+        /* min-height: 150px; */
+
+        /* راه سوم */
+        overflow: auto;
+      }
+
+      img{
+        height: 150px;
+        
+        float: none;
+        float: right;
+        float: left;
+
+        margin-right: 10px;
+      }
+
+      span{
+        display: block;
+        background-color: lightgreen;
+        width: 100px;
+        height: 200px;
+        margin-left: 10px;
+
+        float: left;
+        float: right;
+      }
+      
+      #div2{
+        width: 250px;
+        height: 200px;
+        background-color: rgb(115, 198, 236);
+        /* display: inline-block; */
+        float: left;
+      }
+      #div3{
+        width: 450px;
+        height: 180px;
+        background-color: rgb(212, 115, 236);
+
+        /* display: inline-block; */
+        float: left;
+      }
+      #div4{
+        width: 450px;
+        height: 150px;
+        background-color: rgb(115, 236, 196);
+        /* display: inline-block; */
+        /* float: left ; */
+        float: right;
+      }
+      #div5{
+        width: 380px;
+        width: 100%;
+        height: 350px;
+        background-color: rgb(214, 236, 115);
+        /* display: inline-block; */
+        /* float: left ; */
+
+        clear: left;
+        clear: right;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <img src="images/pineapple.jpg" alt="" />
+      <span></span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cum
+      neque quibusdam commodi et ratione molestiae est at, doloremque ut,
+      expedita voluptatem ea vero ex placeat nihil laudantium aspernatur? Amet!
+      
+    </div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+  </body>
+</html>

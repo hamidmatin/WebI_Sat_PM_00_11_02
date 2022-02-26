@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 770px;
+        height: 500px;
+        margin-bottom: 20px;
+      }
+
+      #div1 {
+        background-color: rgb(245, 245, 125);
+
+        background-image: url('/images/download_1.jfif');
+        background-image: url('/images/download_2.jfif');
+        background-image: url('/images/download_3.jfif');
+      }
+      #div2 {
+        background-color: rgb(125, 237, 245);
+        background-image: url('/images/thumbnail/thomas.jpg');
+
+        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: space;
+        background-repeat: round;
+        background-repeat: no-repeat;
+      }
+      #div3 {
+        background-color: rgb(241, 167, 235);
+        background-image: url('/images/img_5terre_sm.jpg');
+        background-repeat: no-repeat;
+
+        background-position-x: 0;
+        background-position-x: 100px;
+        background-position-x: 300px;
+        background-position-x: -50px;
+        background-position-x: 20%;
+        background-position-x: 50%;
+        background-position-x: 80%;
+        background-position-x: 100%;
+        background-position-x: left;
+        background-position-x: center;
+        background-position-x: right;
+
+        background-position-y: 0;
+        background-position-y: 50px;
+        background-position-y: -50px;
+        background-position-y: 20%;
+        background-position-y: 50%;
+        background-position-y: 80%;
+        background-position-y: 100%;
+        background-position-y: top;
+        background-position-y: center;
+        background-position-y: bottom;
+
+        /* background-position: x y; */
+        background-position: 100px 200px;
+        background-position: 200px 100px;
+        background-position: 200px center;
+        background-position: center 100px;
+        background-position: 200px;
+
+        background-position: right bottom;
+        background-position: bottom right;
+        background-position: bottom;
+        background-position: right;
+        background-position: center;
+      }
+
+      #div4 {
+        background-color: rgb(167, 241, 204);
+        background-image: url('/images/img_5terre.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        background-attachment: scroll;
+
+        /* font-size: 30px; */
+        /* overflow: auto; */
+
+        /* Related on content */
+        background-attachment: local;
+
+        /* Related on viewport */
+        background-attachment: fixed;
+
+        /* background: color image position repeat attachment; */
+        background: rgb(167, 241, 204) url('/images/img_5terre.jpg') no-repeat center fixed;
+      }
+
+      #div5 {
+        background-color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque quam sunt minus
+        sed, alias deleniti libero, necessitatibus eius et quae quod hic error iure excepturi,
+        dolore facere aperiam nemo.
+      </p>
+    </div>
+    <div id="div5">Just for Scroll</div>
+  </body>
+</html>
