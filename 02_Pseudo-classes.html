@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        Pseudo-classes
+            selector:pseudo-class{
+                ....
+                ....
+            }
+      */
+
+      /* unvisited link */
+      a:link {
+        text-decoration: none;
+        color: green;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        display: inline-block;
+        padding: 0.5em 1em;
+        background-color: rgb(190, 241, 190);
+        border-bottom: 5px solid dodgerblue;
+      }
+
+      /* visited link */
+      a:visited {
+        color: white;
+        background-color: hotpink;
+        border-bottom-color: rgb(243, 13, 13);
+        /* font-size: 12px;
+        padding: 20px; */
+      }
+
+      /* mouse over link */
+      a:hover {
+        text-decoration: underline;
+        color: fuchsia;
+        background-color: rgb(204, 243, 233);
+        border-bottom: 1px solid #000;
+        font-size: 12px;
+        /* padding: 1em 1.5em; */
+      }
+
+      /* selected link ( mouse button down)*/
+      a:active{
+        font-size: 14px;
+        padding: 1em 1.5em;
+        background-color: rgb(230, 15, 15);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">W3Shools</a>
+    <a href="https://mft.info">MFT</a>
+    <a href="https://html.spec.whatwg.org/">HTML Standard</a>
+    <a href="https://www.codecademy.com/learn/learn-html">Learn HTML | Codecademy</a>
+    <a href="https://en.wikipedia.org/wiki/HTML">HTML - Wikipedia</a>
+    <a href="https://www.w3.org/html/">W3C HTML</a>
+  </body>
+</html>
