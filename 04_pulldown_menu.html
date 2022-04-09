@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      
+      .nav {
+        background-color: orangered;
+        height: 40px;
+      }
+
+      .nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav > ul > li {
+        float: left;
+      }
+
+      .nav a {
+        background-color: orangered;
+        color: white;
+        text-decoration: none;
+        line-height: 40px;
+        display: block;
+        padding: 0 16px;
+      }
+
+      .nav li:hover > a{
+        background-color: rgb(192, 21, 21);
+      }
+      .nav ul ul {
+        position: absolute;
+        visibility: hidden;
+        
+        /* راه اول */
+        /* border-top: 15px solid transparent; */
+
+        /* راه دوم */
+        padding-top: 15px;
+      }
+
+      .nav ul ul a {
+        background-color: dodgerblue;
+      }
+      .nav ul ul li:hover > a {
+        background-color: rgb(123, 180, 237);
+      }
+      .nav li:hover > ul {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Menu 1</a></li>
+        <li>
+          <a href="#">Menu 2</a>
+          <ul>
+            <li><a href="#">Menu Item 2 - 1</a></li>
+            <li><a href="#">Menu Item 2 - 2</a></li>
+            <li><a href="#">Menu Item 2 - 3</a></li>
+            <li><a href="#">Menu Item 2 - 4</a></li>
+            <li><a href="#">Menu Item 2 - 5</a></li>
+            <li><a href="#">Menu Item 2 - 6</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+        <li>
+          <a href="#">Menu 5</a>
+          <ul>
+            <li><a href="#">Menu Item 5 - 1</a></li>
+            <li><a href="#">Menu Item 5 - 2</a></li>
+            <li><a href="#">Menu Item 5 - 3</a></li>
+            <li><a href="#">Menu Item 5 - 4</a></li>
+            <li><a href="#">Menu Item 5 - 5</a></li>
+            <li><a href="#">Menu Item 5 - 6</a></li>
+            <li><a href="#">Menu Item 5 - 7</a></li>
+            <li><a href="#">Menu Item 5 - 8</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu 6</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

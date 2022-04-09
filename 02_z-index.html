@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #relative{
+      position: relative;
+      border: 2px solid green;
+      width: 450px;
+      height: 450px;
+    }
+    .z-index{
+      width: 150px;
+      height: 150px;
+      background-color: gold;
+      border: solid 2px red;
+      position: absolute;
+    }
+    .item1{
+      top: 0;
+      left: 0;
+    }
+    .item2{
+      top: 25px;
+      left: 25px;
+      z-index: 2;
+      background-color: lightskyblue;
+    }
+    .item3{
+      top: 50px;
+      left: 50px;
+    }
+    .item4{
+      top: 75px;
+      left: 75px;
+    }
+    .item5{
+      top: 100px;
+      left: 100px;
+      z-index: auto;
+      z-index: 1;
+      background-color: lightpink;
+    }
+    .item6{
+      top: 125px;
+      left: 125px;
+    }
+    .item7{
+      top: 150px;
+      left: 150px;
+      z-index: -1;
+      background-color: chocolate;
+    }
+  </style>
+</head>
+<body>
+  <div id="relative">
+    <div class="z-index item1">Item 1</div>
+    <div class="z-index item2">Item 2</div>
+    <div class="z-index item3">Item 3</div>
+    <div class="z-index item4">Item 4</div>
+    <div class="z-index item5">Item 5</div>
+    <div class="z-index item6">Item 6</div>
+    <div class="z-index item7">Item 7</div>
+  </div>
+</body>
+</html>

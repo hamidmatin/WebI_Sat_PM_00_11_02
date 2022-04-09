@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 30%;
+      height: 250px;
+      background-color: bisque;
+      margin: 10px;
+      float: left;
+
+      text-align: center;
+      line-height: 250px;
+    }
+
+    #div2{
+      background-color: rgb(240, 73, 106);
+
+      visibility: visible;
+      visibility: hidden;
+    }
+
+    #div5{
+      background-color: rgb(127, 212, 238);
+
+      display: none;
+    }
+    #div1:hover + div{
+      visibility: visible;
+      display: block;
+    }
+    #div4:hover + div {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1">div 1</div>
+  <div id="div2">div 2</div>
+  <div id="div3">div 3</div>
+  <div id="div4">div 4</div>
+  <div id="div5">div 5</div>
+  <div id="div6">div 6</div>
+</body>
+</html>
