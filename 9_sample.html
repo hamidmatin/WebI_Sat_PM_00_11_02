@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+      }
+      .row::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      #project {
+        text-align: center;
+        padding-top: 70px;
+        background: url('/images/pattern.png');
+      }
+      #project h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        color: #555;
+      }
+      .project {
+        width: 25%;
+        float: left;
+        padding: 8px;
+      }
+      .project img {
+        display: block;
+        width: 100%;
+        filter: blur(5px);
+        transition: all .3s;
+      }
+      .project a {
+        display: block;
+        position: relative;
+        border: 1px solid black;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.235);
+        padding: 5px;
+        overflow: hidden;
+      }
+      .project a::after {
+        content: '';
+        display: block;
+      
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all .3s;
+      }
+      .project a:hover::after {
+        background-color: transparent
+      }
+      .project a:hover > img {
+        filter: none;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#project">Project</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="project">
+      <h2>Project</h2>
+      <p>You'll love our work. Check it out!</p>
+      <div class="row">
+        <div class="project">
+          <a href="#">
+            <img src="images/front-page-project-1.jpg" alt="" />
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="images/front-page-project-2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="images/front-page-project-3.jpg" alt="" />
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="images/front-page-project-4.jpg" alt="" />
+          </a>
+        </div>
+        
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>  
+  </body>
+</html>
