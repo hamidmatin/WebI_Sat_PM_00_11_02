@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @-webkit-keyframes anim1 {
+      from{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+      }
+      to{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(223, 45, 214);
+      }
+    }
+    @-moz-keyframes anim1 {
+      from{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+      }
+      to{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(223, 45, 214);
+      }
+    }
+    @-o-keyframes anim1 {
+      from{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+      }
+      to{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(223, 45, 214);
+      }
+    }
+    @keyframes anim1 {
+      from{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+      }
+      to{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(223, 45, 214);
+      }
+    }
+
+    #div1{
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      animation-name: anim1;
+      animation-duration: 5s;
+      animation-delay: 1s;
+      animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+
+    #div2{
+      width: 100px;
+      height: 100px;
+      background-color: rgb(88, 228, 151);
+      position: absolute;
+      top: 10px;
+      left: 700px;
+
+      -webkit-animation-name: anim1;
+      -moz-animation-name: anim1;
+      -o-animation-name: anim1;
+      animation-name: anim1;
+      
+      -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+      -o-animation-duration: 2s;
+      animation-duration: 2s;
+      
+      -webkit-animation-delay: 3s;
+      -moz-animation-delay: 3s;
+      -o-animation-delay: 3s;
+      animation-delay: 3s;
+
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      animation-timing-function: linear;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1"></div>
+  <div id="div2"></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes anim5 {
+      /* 0%{
+        left: 10px;
+        transform: none;
+      } */
+      40%, 80%{
+        left: 450px;
+        transform: none;
+      }
+      60%{
+        left: 450px;
+        transform: rotate(45deg)
+      }
+      /* 100%{
+        left: 10px;
+        transform: none;
+      } */
+    }
+    #div1{
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #div2{
+      width: 150px;
+      height: 150px;
+      background-color: dodgerblue;
+      position: absolute;
+      top: 250px;
+      left: 800px;
+    }
+    .animate {
+      animation-name: anim5;
+      animation-delay: 2s;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1" class="animate"></div>
+  <div id="div2" class="animate"></div>
+</body>
+</html>
