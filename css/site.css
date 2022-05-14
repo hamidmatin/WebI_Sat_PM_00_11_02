@@ -1,0 +1,231 @@
+@font-face {
+  font-family: iranyekan;
+  src: url('/fonts/IRYEKANR.woff2'), 
+       url('/fonts/IRYEKANR.woff'),
+       url('/fonts/IRYEKANR.ttf');
+}
+@font-face {
+  font-family: iranyekan;
+  font-weight: bold;
+  src: url('/fonts/IRYEKANB.woff2'), 
+       url('/fonts/IRYEKANB.woff');
+}
+@font-face {
+  font-family: iranyekan;
+  font-weight: 300;
+  src: url('/fonts/IRYEKANL.woff2'), 
+       url('/fonts/IRYEKANL.woff');
+}
+
+*{ 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: iranyekan;
+}
+
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+
+/**********  Header ******/
+.header {
+  background-color: #121212;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 200px;
+}
+.header-button:hover {
+  background-color: #e21921;
+}
+
+.logo > img {
+  display: block;
+  height: 40px;
+}
+
+.header-menu {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header-menu li {
+  float: right;
+}
+
+.header-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/********** banner *******/
+.banner {
+  position: relative;
+}
+
+.banner  img {
+  display: block;
+  width: 100%;
+}
+
+.banner-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 48px;
+  left: 0;
+}
+.banner-bottom .side {
+  background-color: #fff;
+  height: 65px;
+  float: right;
+  width: 40%;
+}
+.banner-bottom .center {
+  height: 65px;
+  float: right;
+  width: 20%;
+
+  position: relative;
+}
+
+.banner-bottom .center img {
+  display: block;
+  width: 100%;
+  
+}
+
+.banner-bottom .plane img{
+  position: absolute;
+  width: 60px;
+  /* height: 100%; */
+  left: 50%;
+  top: -10px;
+  transform: translate(-50%);
+  filter: contrast(1000%) invert(1);
+}
+
+/***************/
+.section-title {
+  text-align: center;
+  position: relative;
+}
+.section-title span {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 0 30px;
+}
+.section-title::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*****************/
+.col-1 {
+  width: 33.3333%;
+}
+.col-2 {
+  width: 66.6667%;
+}
+.col-3 {
+  width: 100%;
+}
+.col-1, .col-2, .col-3 {
+  padding: 8px;
+  float: right;
+}
+
+.image-flouid {
+  display: block;
+  width: 100%;
+}
+
+.tour {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.tour img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tour-name {
+  height: 40px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.744), rgba(0, 0, 0, 0));
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 200ms;
+  
+}
+.tour-name h3 {
+  margin: 0;
+  position: absolute;
+  bottom: -12px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.461);
+  padding: 10px;
+  transition: all 200ms;
+}
+.tour-name h3 span {
+  display: block;
+  border-bottom: 2px solid white;
+  padding: 10px 0;
+  /* height: 55px; */
+}
+
+.tour:hover .tour-name{
+  height: 100%;
+}
+.tour:hover .tour-name h3{
+  bottom: 30px;
+  background-color: transparent;
+}

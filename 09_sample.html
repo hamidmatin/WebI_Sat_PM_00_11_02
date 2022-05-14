@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing: border-box;}
+    body{margin: 0;}
+    .nav{
+      background-color: rgb(90, 231, 90);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+    }
+    .nav ul a{
+      display: block;
+      text-decoration: none;
+      color: rgb(241, 241, 241);
+      padding: 1em 1.5em;
+    }
+    .nav ul a:hover{
+      color: wheat;
+      background-color: darkgreen;
+    }
+
+    .nav .brand{
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 32px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+      display: block;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#" class="brand">LOGO</a>
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 4</a></li>
+      <li><a href="#">Menu 5</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #262626;
+  color: white;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.nav {
+  border-bottom: 3px solid #fff;
+  height: 50px;
+}
+.nav .nav-link,
+.nav .nav-brand {
+  display: block;
+  float: left;
+  color: white;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav .nav-link {
+  padding: 0 16px;
+  font-size: 12px;
+}
+.nav .nav-link:hover {
+  color: rgb(211, 41, 41);
+}
+.nav .nav-brand {
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+/********************/
+.header {
+  background-color: white;
+  color: #262626;
+  margin-top: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 350px;
+}
+.header .header-image,
+.header .header-content {
+  width: 50%;
+  float: left;
+}
+.header .header-image {
+  height: 100%;
+}
+.header .header-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header .header-content {
+  padding: 50px;
+}
+/************************/
+.card-container {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  overflow: auto;
+  position: relative;
+  height: 400px;
+}
+.card-container .card {
+  position: absolute;
+  top: 1.5rem;
+  height: 350px;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: -2rem 0 3rem -2rem #000;
+  background: linear-gradient(85deg, #434343, #262626);
+  transition: all 0.3s;
+}
+.card-container .card:nth-child(1) {
+  left: 0;
+  z-index: 1;
+}
+.card-container .card:nth-child(2) {
+  left: 200px;
+  z-index: 2;
+}
+.card-container .card:nth-child(3) {
+  left: 400px;
+  z-index: 3;
+}
+.card-container .card:nth-child(4) {
+  left: 600px;
+  z-index: 4;
+}
+.card-container .card:nth-child(5) {
+  left: 800px;
+  z-index: 5;
+}
+.card-container .card:nth-child(6) {
+  left: 1000px;
+  z-index: 6;
+}
+.card-container .card:nth-child(7) {
+  left: 1200px;
+  z-index: 7;
+}
+
+.card-container .card .author {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  width: 100%;
+}
+.card-container .card .author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  float: left;
+}
+.card-container .card .author-avatar img {
+  width: 100%;
+  height: 100%;
+}
+.card-container .card .author-name {
+  float: left;
+  margin-left: 10px;
+  line-height: 40px;
+}
+
+.card-container .card:hover ~ .card {
+  transform: translateX(50px);
+}
+.card-container .card:hover {
+  transform: translateY(-1rem) rotate(3deg);
+}
