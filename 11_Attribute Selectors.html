@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
     <style>
       /*
         Attribute Selectors
@@ -63,7 +65,19 @@
         color: red;
       }
       a[href$='.pdf']::after {
-      
+        content: '\f1c1';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+      }
+      a[href$='.png']::after {
+        content: '\f1c5';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+      }
+      a[href$='.mp4']::after {
+        content: '\f1c8';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
       }
       /*
         Attribute Selectors
@@ -83,6 +97,7 @@
       }
 
       /************/
+     
       .nav ul {
         list-style: none;
         padding: 0;
@@ -99,7 +114,7 @@
       }
     </style>
   </head>
-  <body>
+  <body >
     <a href="https://www.w3schools.com">w3schools.com</a>
     <a href="http://www.disney.com" target="_blank">disney.com</a>
     <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
@@ -114,17 +129,21 @@
     <hr />
 
     <div class="first_test" title="flower">The first div element.</div>
-    <div class="second">The second div element.</div>
+    <div class="second"  title="klematis flowers">The second div element.</div>
     <div class="my-test" title="klematis flower asfaf">The third div element.</div>
     <p class="mytest">This is some text in a paragraph.</p>
     <hr />
     <div class="nav">
       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+        <li><a href="file.pdf" download>PDF File</a></li>
+        <li><a href="file.png" download>Picture File</a></li>
+        <li><a href="file.mp4" download>Video File</a></li>
         <li>Item 4</li>
       </ul>
     </div>
+
+    
+    
+    
   </body>
 </html>
